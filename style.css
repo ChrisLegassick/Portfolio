@@ -1,0 +1,255 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap');
+
+:root {
+  --primary-color: #ffbe0b;
+  --dark-color: #333333;
+}
+
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+body {
+  font-family: 'Montserrat', sans-serif;
+}
+
+.hero-section {
+  height: 100vh;
+  width: 100%;
+  background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
+    url(./images/main-img.jpg);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  color: #fff;
+  padding: 2rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  position: relative;
+}
+
+nav {
+  position: absolute;
+  color: #fff;
+  padding: 2rem;
+  width: 100%;
+  z-index: 1;
+}
+
+.nav-items {
+  display: flex;
+  justify-content: space-between;
+}
+
+.hero-socials {
+  display: flex;
+  align-items: center;
+}
+
+.hero-socials a {
+  color: #fff;
+  margin-right: 10px;
+}
+
+.hero-socials-line {
+  height: 2px;
+  width: 100px;
+  background-color: #fff;
+  margin-right: 20px;
+}
+
+.hero-text {
+  padding: 1rem 0 4rem;
+}
+
+.hero-text h1 {
+  font-size: 1.2rem;
+  padding-bottom: 0.5rem;
+}
+
+.hero-text h2 {
+  font-size: 2rem;
+}
+
+.btn {
+  cursor: pointer;
+  border-radius: 3px;
+  text-decoration: none;
+  border: 1px solid var(--primary-color);
+  font-weight: 700;
+}
+
+.cta-primary {
+  padding: 0.8rem 1.4rem;
+  background-color: var(--primary-color);
+  color: #000;
+}
+
+.cta-secondary {
+  padding: 0.8rem 1rem;
+  color: #fff;
+  margin-left: 1.5rem;
+}
+
+.hero-scrolldown {
+  cursor: pointer;
+  padding: 1rem;
+  color: #fff;
+  position: absolute;
+  z-index: 1;
+  bottom: 5rem;
+  left: 50%;
+  transform: translate(-50%);
+}
+
+#projects {
+  padding: 4rem 2rem;
+}
+
+.section-title {
+  display: flex;
+  align-items: center;
+}
+
+.title-line {
+  height: 2px;
+  width: 100px;
+  margin-right: 10px;
+  background-color: var(--dark-color);
+}
+
+.section-title h2 {
+  font-size: 1.25rem;
+}
+
+.project-container {
+  display: flex;
+  flex-direction: column;
+}
+
+.project-thumbnail {
+  padding: 3rem 0 1rem;
+  position: relative;
+}
+
+.project-thumbnail img {
+  width: 100%;
+}
+
+.project-thumbnail::before {
+  content: '';
+  position: absolute;
+  top: 30px;
+  left: -20px;
+  width: 100%;
+  height: calc(100vw - 74%);
+  border: 1px solid var(--primary-color);
+  z-index: -1;
+}
+
+.project-info p {
+  padding-top: 1rem;
+}
+
+.project-links {
+  padding-top: 1rem;
+}
+
+.project-links a {
+  color: var(--dark-color);
+  margin-right: 0.5rem;
+}
+
+#about {
+  background-color: #202020;
+  color: #fff;
+  padding: 4rem 2rem;
+}
+
+#about .title-line {
+  background-color: #fff;
+}
+
+#about .section-title {
+  padding-bottom: 2rem;
+}
+
+#about p {
+  padding-bottom: 1rem;
+}
+
+#about p:nth-of-type(4) {
+  padding-top: 1rem;
+}
+
+#about ul {
+  list-style: none;
+}
+
+#about li {
+  margin-bottom: 0.5rem;
+}
+
+#about li::before {
+  content: '▹';
+  color: var(--primary-color);
+  padding-right: 1rem;
+}
+
+#contact-me {
+  padding: 4rem 2rem;
+}
+
+#contact-me .section-title {
+  padding-bottom: 2rem;
+}
+
+#contact-me p {
+  padding-bottom: 1rem;
+}
+
+.contact-email-link {
+  display: flex;
+}
+
+.contact-email-link a {
+  color: var(--dark-color);
+  padding-right: 0.5rem;
+}
+
+.contact-socials a {
+  color: var(--dark-color);
+  margin-right: 0.5rem;
+}
+
+#contact-me form {
+  display: flex;
+  flex-direction: column;
+}
+
+#contact-me form label {
+  padding: 1rem 0 0.3rem;
+}
+
+#contact-me form input {
+  padding: 0.6rem;
+  border: none;
+  border-radius: 5px;
+  background-color: #f6f6f6;
+}
+
+#contact-me form textarea {
+  height: 6rem;
+  padding: 0.6rem;
+  border: none;
+  border-radius: 5px;
+  background-color: #f6f6f6;
+}
+
+#contact-me form button {
+  width: 40%;
+  margin-top: 1.5rem;
+}
