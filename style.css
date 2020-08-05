@@ -80,6 +80,7 @@ nav {
   text-decoration: none;
   border: 1px solid var(--primary-color);
   font-weight: 700;
+  font-size: 0.8rem;
 }
 
 .cta-primary {
@@ -92,17 +93,6 @@ nav {
   padding: 0.8rem 1rem;
   color: #fff;
   margin-left: 1.5rem;
-}
-
-.hero-scrolldown {
-  cursor: pointer;
-  padding: 1rem;
-  color: #fff;
-  position: absolute;
-  z-index: 1;
-  bottom: 5rem;
-  left: 50%;
-  transform: translate(-50%);
 }
 
 #projects {
@@ -250,6 +240,7 @@ nav {
 }
 
 #contact-me form button {
-  width: 40%;
+  width: 50%;
   margin-top: 1.5rem;
+  font-family: 'Montserrat', sans-serif;
 }
