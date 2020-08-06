@@ -13,6 +13,7 @@
 
 body {
   font-family: 'Montserrat', sans-serif;
+  font-size: 1rem;
 }
 
 .hero-section {
@@ -45,6 +46,7 @@ nav {
 }
 
 .hero-socials {
+  margin-top: 2rem;
   display: flex;
   align-items: center;
 }
@@ -62,57 +64,37 @@ nav {
 }
 
 .hero-text {
-  padding: 1rem 0 4rem;
+  padding: 1rem 0 3rem;
 }
 
 .hero-text h1 {
-  font-size: 1.2rem;
-  padding-bottom: 0.5rem;
+  font-size: 1rem;
+  padding-bottom: 0.6rem;
 }
 
 .hero-text h2 {
-  font-size: 2rem;
+  font-size: 1.8rem;
 }
 
 .btn {
   cursor: pointer;
+  border: none;
   border-radius: 3px;
   text-decoration: none;
-  border: 1px solid var(--primary-color);
-  font-weight: 700;
-  font-size: 0.8rem;
-}
-
-.cta-primary {
-  padding: 0.8rem 1.4rem;
   background-color: var(--primary-color);
   color: #000;
-}
-
-.cta-secondary {
-  padding: 0.8rem 1rem;
-  color: #fff;
-  margin-left: 1.5rem;
+  padding: 0.8rem 1.2rem;
+  font-weight: 700;
+  font-size: 0.9rem;
+  align-self: flex-start;
 }
 
 #projects {
   padding: 4rem 2rem;
 }
 
-.section-title {
-  display: flex;
-  align-items: center;
-}
-
-.title-line {
-  height: 2px;
-  width: 100px;
-  margin-right: 10px;
-  background-color: var(--dark-color);
-}
-
 .section-title h2 {
-  font-size: 1.25rem;
+  font-size: 1.2rem;
 }
 
 .project-container {
@@ -140,6 +122,10 @@ nav {
   z-index: -1;
 }
 
+.project-info h3 {
+  font-size: 1.2rem;
+}
+
 .project-info p {
   padding-top: 1rem;
 }
@@ -159,12 +145,9 @@ nav {
   padding: 4rem 2rem;
 }
 
-#about .title-line {
-  background-color: #fff;
-}
-
 #about .section-title {
   padding-bottom: 2rem;
+  font-size: 1.2rem;
 }
 
 #about p {
@@ -195,6 +178,7 @@ nav {
 
 #contact-me .section-title {
   padding-bottom: 2rem;
+  font-size: 1.2rem;
 }
 
 #contact-me p {
@@ -240,7 +224,24 @@ nav {
 }
 
 #contact-me form button {
-  width: 50%;
   margin-top: 1.5rem;
   font-family: 'Montserrat', sans-serif;
+}
+
+@media (min-width: 600px) {
+  html {
+    font-size: 1.2rem;
+  }
+}
+
+@media (min-width: 800px) {
+  html {
+    font-size: 1.4rem;
+  }
+}
+
+@media (min-width: 1000px) {
+  html {
+    font-size: 1.6rem;
+  }
 }
