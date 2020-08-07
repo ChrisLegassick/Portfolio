@@ -11,9 +11,12 @@
   margin: 0;
 }
 
+html {
+  font-size: calc(16px + (60 - 16) * ((100vw - 300px) / (2560 - 300)));
+}
+
 body {
   font-family: 'Montserrat', sans-serif;
-  font-size: 1rem;
 }
 
 .hero-section {
@@ -226,22 +229,4 @@ nav {
 #contact-me form button {
   margin-top: 1.5rem;
   font-family: 'Montserrat', sans-serif;
-}
-
-@media (min-width: 600px) {
-  html {
-    font-size: 1.2rem;
-  }
-}
-
-@media (min-width: 800px) {
-  html {
-    font-size: 1.4rem;
-  }
-}
-
-@media (min-width: 1000px) {
-  html {
-    font-size: 1.6rem;
-  }
 }
