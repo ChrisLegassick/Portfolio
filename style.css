@@ -98,6 +98,7 @@ nav {
 
 .section-title h2 {
   font-size: 1.2rem;
+  padding-bottom: 4rem;
 }
 
 .project-container {
@@ -106,7 +107,6 @@ nav {
 }
 
 .project-thumbnail {
-  padding: 3rem 0 1rem;
   position: relative;
 }
 
@@ -117,10 +117,10 @@ nav {
 .project-thumbnail::before {
   content: '';
   position: absolute;
-  top: 30px;
-  left: -20px;
+  top: -7%;
+  left: -5%;
   width: 100%;
-  height: calc(100vw - 74%);
+  height: 100%;
   border: 1px solid var(--primary-color);
   z-index: -1;
 }
@@ -148,9 +148,9 @@ nav {
   padding: 4rem 2rem;
 }
 
-#about .section-title {
-  padding-bottom: 2rem;
+#about .section-title h2 {
   font-size: 1.2rem;
+  padding-bottom: 2rem;
 }
 
 #about p {
@@ -227,4 +227,41 @@ nav {
 #contact-me form button {
   margin-top: 1.5rem;
   font-family: 'Montserrat', sans-serif;
+}
+
+@media (min-width: 960px) {
+  .section-title h2 {
+    padding-bottom: 2rem;
+  }
+
+  .project-container {
+    flex-direction: row;
+    margin-top: 2rem;
+    justify-content: space-between;
+    width: 100%;
+  }
+
+  .project-thumbnail {
+    flex: 1;
+  }
+
+  .project-info {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    font-size: 0.8rem;
+    flex: 1;
+    text-align: right;
+    padding-left: 2rem;
+  }
+
+  .reverse {
+    flex-direction: row-reverse;
+  }
+
+  .reverse .project-info {
+    text-align: left;
+    padding-left: 0;
+    padding-right: 2rem;
+  }
 }
