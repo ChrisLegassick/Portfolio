@@ -105,62 +105,76 @@
         <div class="section-title">
           <h2>About Me</h2>
         </div>
-        <p>
-          Hi there! I’m Chris, a web developer based in Cornwall, UK that
-          specialises in front end development.
-        </p>
-        <p>
-          With a background in sales and a degree in Psychology, I design and
-          create with a focus on user experience.
-        </p>
-        <p>I’m currently designing and developing with:</p>
-        <ul>
-          <li>HTML & CSS</li>
-          <li>Javascript</li>
-          <li>Node & Express</li>
-          <li>MongoDB</li>
-          <li>Git</li>
-          <li>Adobe XD/Figma</li>
-        </ul>
-        <p>I’m currently expanding my skills in the following areas:</p>
-        <ul>
-          <li>Front End Development</li>
-          <li>UI/UX Design</li>
-          <li>API Development</li>
-        </ul>
+        <div class="section-content">
+          <div class="section-left">
+            <p>
+              Hi there! I’m Chris, a web developer based in Cornwall, UK that
+              specialises in front end development.
+            </p>
+            <p>
+              With a background in sales and a degree in Psychology, I design
+              and create with a focus on user experience.
+            </p>
+            <p>I’m currently designing and developing with:</p>
+            <ul>
+              <li>HTML & CSS</li>
+              <li>Javascript</li>
+              <li>Node & Express</li>
+              <li>MongoDB</li>
+              <li>Git</li>
+              <li>Adobe XD/Figma</li>
+            </ul>
+          </div>
+          <div class="section-right">
+            <p>I’m currently expanding my skills in the following areas:</p>
+            <ul>
+              <li>Front End Development</li>
+              <li>UI/UX Design</li>
+              <li>API Development</li>
+            </ul>
+          </div>
+        </div>
       </section>
       <section id="contact-me">
         <div class="section-title">
           <h2>Get In Touch</h2>
         </div>
-        <p>
-          You can reach me by email, LinkedIn or the contact form below. I look
-          forward to hearing from you!
-        </p>
-        <p>Currently open to new projects and employment opportunities.</p>
-        <div class="contact-email-link">
-          <a href="#"><i class="fas fa-envelope"></i></a>
-          <p>test@test.com</p>
+        <div class="section-content">
+          <div class="section-left">
+            <p>
+              You can reach me by email, LinkedIn or the contact form below. I
+              look forward to hearing from you!
+            </p>
+            <p>Currently open to new projects and employment opportunities.</p>
+            <div class="contact-email-link">
+              <a href="#"><i class="fas fa-envelope"></i></a>
+              <p>test@test.com</p>
+            </div>
+            <div class="contact-socials">
+              <a href="#"><i class="fab fa-github"></i></a>
+              <a href="#"><i class="fab fa-linkedin-in"></i></a>
+            </div>
+          </div>
+          <div class="section-right">
+            <form name="contact" method="POST" data-netlify="true">
+              <label for="name"
+                >Your Name
+                <input type="text" name="name" />
+              </label>
+              <label for="email"
+                >Email
+                <input type="email" name="email" />
+              </label>
+              <label for="message"
+                >Message
+                <textarea name="message"></textarea>
+              </label>
+              <button type="submit" class="btn cta-primary">
+                Send Message
+              </button>
+            </form>
+          </div>
         </div>
-        <div class="contact-socials">
-          <a href="#"><i class="fab fa-github"></i></a>
-          <a href="#"><i class="fab fa-linkedin-in"></i></a>
-        </div>
-        <form name="contact" method="POST" data-netlify="true">
-          <label for="name"
-            >Your Name
-            <input type="text" name="name" />
-          </label>
-          <label for="email"
-            >Email
-            <input type="email" name="email" />
-          </label>
-          <label for="message"
-            >Message
-            <textarea name="message"></textarea>
-          </label>
-          <button type="submit" class="btn cta-primary">Send Message</button>
-        </form>
       </section>
     </main>
 

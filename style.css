@@ -277,4 +277,22 @@ nav {
     padding-left: 0;
     padding-right: 2rem;
   }
+
+  .section-content {
+    display: flex;
+  }
+
+  .section-left,
+  .section-right {
+    flex: 1;
+  }
+
+  .section-left {
+    margin-right: 4rem;
+    padding-top: 1rem;
+  }
+
+  #contact-me .section-title h2 {
+    padding-bottom: 1rem;
+  }
 }
