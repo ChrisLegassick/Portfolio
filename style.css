@@ -12,7 +12,7 @@
 }
 
 html {
-  font-size: calc(16px + (60 - 16) * ((100vmin - 300px) / (2560 - 300)));
+  font-size: calc(16px + (50 - 16) * ((100vmin - 300px) / (2560 - 300)));
 }
 
 body {
@@ -234,7 +234,7 @@ nav {
   font-family: 'Montserrat', sans-serif;
 }
 
-@media (min-width: 960px) {
+@media (min-width: 768px) {
   #projects {
     padding-bottom: 0;
   }
@@ -252,12 +252,15 @@ nav {
 
   .project-thumbnail {
     flex: 1;
+    margin-bottom: 0;
+    height: 100%;
+    align-self: center;
   }
 
   .project-info {
     display: flex;
     flex-direction: column;
-    justify-content: center;
+    justify-content: space-around;
     font-size: 0.8rem;
     flex: 1;
     text-align: right;
