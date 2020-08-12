@@ -36,17 +36,92 @@ body {
   position: relative;
 }
 
-nav {
+.logo,
+.nav-toggle {
   position: absolute;
+  margin: 2rem;
   color: #fff;
-  padding: 2rem;
-  width: 100%;
   z-index: 1;
 }
 
-.nav-items {
+.logo {
+  top: 0;
+  left: 0;
+}
+
+.nav-toggle {
+  top: 0;
+  right: 0;
+  z-index: 99;
+  color: black;
+  cursor: pointer;
+}
+
+.menu-line {
+  display: block;
+  height: 5px;
+  width: 50px;
+  margin: 10px auto;
+  transition: all 0.7s ease;
+  background: #fff;
+}
+
+.active .top {
+  transform: translateY(15px) rotateZ(45deg);
+  background: var(--dark-color);
+}
+
+.active .middle {
+  width: 0;
+  background: var(--dark-color);
+}
+
+.active .bottom {
+  transform: translateY(-15px) rotateZ(-45deg);
+  background: var(--dark-color);
+}
+
+.nav-overlay {
+  position: absolute;
+  top: 0;
+  height: 100vh;
+  width: 100%;
+  background-color: #fff;
+  z-index: 98;
   display: flex;
-  justify-content: space-between;
+  align-items: center;
+}
+
+.nav-overlay-hide {
+  display: none;
+}
+
+.noscroll-overlay {
+  overflow: hidden;
+}
+
+.overlay-nav-links {
+  display: flex;
+  flex-direction: column;
+  height: 60vh;
+  width: 100%;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.overlay-nav-links li {
+  list-style: none;
+}
+
+.overlay-nav-links li:nth-child(3) {
+  margin-bottom: 0;
+}
+
+.overlay-nav-links a {
+  text-decoration: none;
+  color: var(--dark-color);
+  font-weight: 700;
+  font-size: 2.5rem;
 }
 
 .hero-socials {
@@ -246,12 +321,17 @@ nav {
 
 @media (min-width: 900px) {
   .hero-section,
-  nav,
   #projects,
   #about,
   #contact-me {
     padding-left: 4rem;
     padding-right: 4rem;
+  }
+
+  .logo,
+  .nav-toggle {
+    margin-left: 4rem;
+    margin-right: 4rem;
   }
 
   #projects {
