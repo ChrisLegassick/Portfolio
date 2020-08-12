@@ -32,7 +32,7 @@
           A web developer from Cornwall with a focus on user-centered design.
         </h2>
       </div>
-      <a href="#" class="btn">View Work</a>
+      <a href="#projects" class="btn">View Work</a>
     </div>
 
     <main>
@@ -157,17 +157,25 @@
           </div>
           <div class="section-right">
             <form name="contact" method="POST" data-netlify="true">
-              <label for="name"
-                >Your Name
-                <input type="text" name="name" />
-              </label>
-              <label for="email"
-                >Email
-                <input type="email" name="email" />
-              </label>
+              <div class="label-container">
+                <label for="name"
+                  ><div class="label-content">
+                    Your Name <span>(required)</span>
+                  </div>
+                  <input type="text" name="name" required />
+                </label>
+                <label for="email"
+                  ><div class="label-content">
+                    Email <span>(required)</span>
+                  </div>
+                  <input type="email" name="email" required />
+                </label>
+              </div>
               <label for="message"
-                >Message
-                <textarea name="message"></textarea>
+                ><div class="label-content">
+                  Message <span>(required)</span>
+                </div>
+                <textarea name="message" required></textarea>
               </label>
               <button type="submit" class="btn cta-primary">
                 Send Message
