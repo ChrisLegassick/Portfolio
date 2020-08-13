@@ -64,15 +64,15 @@ body {
 
 .menu-line {
   display: block;
-  height: 3px;
-  width: 30px;
-  margin: 7px auto;
+  height: 5px;
+  width: 50px;
+  margin: 10px auto;
   transition: all 0.7s ease;
   background: #fff;
 }
 
 .active .top {
-  transform: translateY(11px) rotateZ(45deg);
+  transform: translateY(15px) rotateZ(45deg);
   background: var(--dark-color);
 }
 
@@ -82,7 +82,7 @@ body {
 }
 
 .active .bottom {
-  transform: translateY(-9px) rotateZ(-45deg);
+  transform: translateY(-15px) rotateZ(-45deg);
   background: var(--dark-color);
 }
 
