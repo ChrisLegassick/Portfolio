@@ -64,15 +64,15 @@ body {
 
 .menu-line {
   display: block;
-  height: 5px;
-  width: 50px;
-  margin: 10px auto;
-  transition: all 0.7s ease;
+  height: 3px;
+  width: 30px;
+  margin: 7px auto;
+  transition: all 0.5s ease;
   background: #fff;
 }
 
 .active .top {
-  transform: translateY(15px) rotateZ(45deg);
+  transform: translateY(10px) rotateZ(45deg);
   background: var(--dark-color);
 }
 
@@ -82,7 +82,7 @@ body {
 }
 
 .active .bottom {
-  transform: translateY(-15px) rotateZ(-45deg);
+  transform: translateY(-10px) rotateZ(-45deg);
   background: var(--dark-color);
 }
 
@@ -306,6 +306,7 @@ body {
 #contact-me form textarea {
   height: 6rem;
   padding: 0.6rem;
+  margin-top: 0.3rem;
   border: none;
   border-radius: 5px;
   background-color: #f6f6f6;
