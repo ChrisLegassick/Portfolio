@@ -108,7 +108,7 @@ body {
 .overlay-nav-links {
   display: flex;
   flex-direction: column;
-  height: 70vh;
+  height: 60vh;
   width: 100%;
   justify-content: space-around;
   align-items: center;
@@ -360,6 +360,10 @@ body {
   .bg-nav-item a {
     color: #fff;
     text-decoration: none;
+  }
+
+  .bg-nav-item a:hover {
+    border-bottom: 3px solid var(--primary-color);
   }
 
   #projects {
