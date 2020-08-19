@@ -12,7 +12,7 @@
 }
 
 html {
-  font-size: calc(16px + (50 - 16) * ((100vmin - 300px) / (2560 - 300)));
+  /* font-size: calc(16px + (60 - 16) * ((100vmin - 300px) / (2560 - 300))); */
   scroll-behavior: smooth;
 }
 
@@ -153,7 +153,7 @@ body {
 }
 
 .hero-text h2 {
-  font-size: 1.8rem;
+  font-size: 2rem;
 }
 
 .btn {
@@ -392,7 +392,6 @@ body {
     display: flex;
     flex-direction: column;
     justify-content: space-around;
-    font-size: 0.8rem;
     flex: 1;
     text-align: right;
     padding-left: 2rem;
@@ -457,5 +456,41 @@ body {
 
   .bg-contact-layout {
     display: inline;
+  }
+}
+
+@media (min-width: 1100px) {
+  html {
+    font-size: 20px;
+  }
+}
+
+@media (min-width: 1400px) {
+  html {
+    font-size: 22px;
+  }
+}
+
+@media (min-width: 1600px) {
+  html {
+    font-size: 24px;
+  }
+}
+
+@media (min-width: 1900px) {
+  html {
+    font-size: 28px;
+  }
+}
+
+@media (min-width: 2200px) {
+  html {
+    font-size: 32px;
+  }
+}
+
+@media (max-height: 350px) {
+  .hero-text {
+    padding: 0 0 1rem;
   }
 }
